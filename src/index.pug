@@ -1,0 +1,369 @@
+---
+title: Velo1000 | Главная
+---
+
+extends includes/_page
+
+block main
+
+    .main-page
+
+        // Banner section
+        section.banner-section
+
+            .swiper.banner__slider
+
+                .swiper-wrapper
+
+                    .swiper-slide
+                        .banner(style="background-image: url('assets/images/slider-main.jpg')")
+                            .container
+                                .banner__slide
+                                    .banner__block
+                                        h2.banner__title Огромный выбор аксессуаров и запчастей для велосипедов
+                                        p.banner__subtitle В каталоге магазина более 1000 товаров для комфортной и безопасной езды от отечественных и зарубежных производителей
+                                        a.banner__button.button-style.button-style--red(href="#") Перейти в каталог
+
+                                    .banner__image
+                                        img(src="assets/images/slider-image.png", alt="img")
+
+                    .swiper-slide
+                        .banner(style="background-image: url('assets/images/slider-main.jpg')")
+                            .container
+                                .banner__slide
+                                    .banner__block
+                                        h2.banner__title Огромный выбор аксессуаров и запчастей для велосипедов
+                                        p.banner__subtitle В каталоге магазина более 1000 товаров для комфортной и безопасной езды от отечественных и зарубежных производителей
+                                        a.banner__button.button-style.button-style--red(href="#") Перейти в каталог
+
+                                    .banner__image
+                                        img(src="assets/images/slider-image.png", alt="img")
+
+                    .swiper-slide
+                        .banner(style="background-image: url('assets/images/slider-main.jpg')")
+                            .container
+                                .banner__slide
+                                    .banner__block
+                                        h2.banner__title Огромный выбор аксессуаров и запчастей для велосипедов
+                                        p.banner__subtitle В каталоге магазина более 1000 товаров для комфортной и безопасной езды от отечественных и зарубежных производителей
+                                        a.banner__button.button-style.button-style--red(href="#") Перейти в каталог
+
+                                    .banner__image
+                                        img(src="assets/images/slider-image.png", alt="img")
+
+                .banner__dots
+                    .container
+                        .swiper-pagination.banner__pagination
+
+        // Brands section
+        section.brands-section
+
+            .swiper.brands__slider
+
+                .swiper-wrapper.brands__wrapper
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-1.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-2.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-3.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-4.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-5.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-6.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-7.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-8.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-9.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-10.png", alt="img")
+
+                    .swiper-slide.brand__slide
+                        .brand__image
+                            img(src="assets/images/brand-11.png", alt="img")
+
+
+                .swiper-navigation
+                    .swiper-button-prev.brand__button.brand__button--prev
+                    .swiper-button-next.brand__button.brand__button--next
+
+
+            a.button-style.button-style--transparent_black(href="#") Все бренды
+
+        // Popular section
+        section.popular-section
+
+            .container
+
+                h2.catalog__title Популярные категории
+
+                .catalog
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-1.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label ИНСТРУМЕНТЫ
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-2.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label ГРИПСЫ
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-3.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label ПЕДАЛИ
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-4.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label ВИЛКИ
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-5.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label ПОКРЫШКИ
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-6.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label Цепи
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-7.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label Тормозные колодки дисковые
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-8.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label Тормозные колодки ободные
+                            span.item-arrow-icon
+
+                    a.catalog__block(href="#")
+                        .catalog__image
+                            img(src="assets/images/pop-9.png", alt="img")
+                        .catalog__desc
+                            p.catalog__label Кассеты
+                            span.item-arrow-icon
+
+                a.button-style.button-style--transparent_black(href="#") Все категории
+
+        // Materials section
+        section.materials-section
+
+            .container
+
+                h2.materials__title Полезные материалы
+
+                .materials
+
+                    a.materials__block(href="#" style="background-image: url('assets/images/material-1.png')")
+                        .materials__wrap
+                            h4.materials__label Название полезной статьи Классификация велосипедов по видам
+                            p.materials__text Вдоволь откатавшись на велосипеде летом, каждый владелец своего "железного коня" задумывается о его хранении в зимний период.
+
+                    a.materials__block(href="#" style="background-image: url('assets/images/material-2.png')")
+                        .materials__wrap
+                            h4.materials__label Классификация велосипедов по видам
+                            p.materials__text Дорожные велосипеды предназначены для удобной езды по городу, где скорость менее важна, чем удобство
+
+                    a.materials__block(href="#" style="background-image: url('assets/images/material-3.png')")
+                        .materials__wrap
+                            h4.materials__label Возрождение велосипеда после зимней консервации
+                            p.materials__text Когда снег уже растаял, а солнце стало приятно припекать, уже хочется покататься на велосипеде
+
+                    a.materials__block(href="#" style="background-image: url('assets/images/material-4.png')")
+                        .materials__wrap
+                            h4.materials__label Показатели яркости велосипедных фар
+                            p.materials__text Световой поток – это часть мощности излучения, которая воспринимается человеческим глазом.
+
+                a.button-style.button-style--transparent_black(href="#") Читать все
+
+        // News section
+        section.news-section
+
+            .container
+
+                h2.news__title Новости
+
+                .news
+
+                    .news__block
+                        .news__head
+                            .news__date 21.02.2022
+                            span.item-arrow-icon
+                        h4.news__label Режим работы 23 февраля и 8 марта 2022
+                        a.news__link(href="#")  Читать новость
+
+                    .news__block
+                        .news__head
+                            .news__date 21.02.2022
+                            span.item-arrow-icon
+                        h4.news__label Режим работы в&nbsp;новогодние праздники
+                        a.news__link(href="#")  Читать новость
+
+                    .news__block
+                        .news__head
+                            .news__date 21.02.2022
+                            span.item-arrow-icon
+                        h4.news__label Приглашаем на МТБ-гонку RVO RACE, Москва, 8&nbsp;августа, 12:00
+                        a.news__link(href="#")  Читать новость
+
+                a.button-style.button-style--transparent_black(href="#") Читать все новости
+
+
+        // Promo section
+        section.promo-section
+
+            .promo
+
+                .container
+
+                    .promo__banner
+
+                        .promo__wrap
+
+                            p.promo__label Совершите покупку на сумму <span>от&nbsp;5&nbsp;000&nbsp;рублей</span> и&nbsp;получите скидку на следующую покупку
+
+                            ul.promo__list
+                                li.promo__list-item от 5 000 руб. – 3%
+                                li.promo__list-item от 15 000 руб. – 5%
+                                li.promo__list-item от 25 000 руб. – 8%
+
+                        .promo__image
+                            img(src="assets/images/promo-banner.png", alt="img")
+
+                    .promo__notify
+                        p * Клубная карта выдается по предъявленным чекам.
+                        p * Скидка не действует на товары, участвующие в акции или распродаже.
+                        p * Скидка не действует при безналичной оплате.
+
+
+            .promo__line
+
+                .container
+
+                    .promo__items
+
+                        .promo__item
+                            p Огромный выбор велозапчастей
+
+                        .promo__item
+                            p Программа лояльности
+
+                        .promo__item
+                            p Два магазина в&nbsp;Москве
+
+                        .promo__item
+                            p Доставка по&nbsp;всей&nbsp;России
+
+
+        // Shops section
+        section.shops-section
+
+            .shops__title
+                .container
+                    h2 Магазины в москве
+
+            .shops__wrapper
+
+                .shops__addresses
+
+                    .container
+
+                        .shops__addresses-inner
+
+                            // Обращаемся к ID чтобы получить нужный цвет логотипа
+
+                                use(xlink:href="assets/images/moscow-metro.svg#ОБРАЗЕЦ"), где "ОБРАЗЕЦ" - это цвет нашего логотипа
+
+                                Пишем только маленькими буквами!
+
+                                red: красный
+                                green: зеленый
+                                blue: синий
+                                light-blue: голубой
+                                brown: коричневый
+                                orange: оранжевый
+                                purple: фиолетовый
+                                yellow: желтый
+                                grey: серый
+                                lime: салатовый
+                                teal: бирюзовый
+                                blue-grey: серо-голубой
+                                pink: розовый
+
+                            .shops__block
+                                .shops__metro
+                                    .shops__metro-logo(data-color="red" data-coords="55.789232, 37.677832")
+                                        svg
+                                            use(xlink:href="assets/images/moscow-metro.svg#red")
+                                    h4.shops__metro-name Сокольники
+                                .shops__address
+                                    p Сокольническая пл., д.4. "Галерея спорта" Павильоны:&nbsp;№18, 44, 77, 101
+                                .shops__works
+                                    p Пн-сб: с 10 до 20 ч Воскресенье:&nbsp;с&nbsp;10&nbsp;до&nbsp;19&nbsp;ч
+
+                            .shops__block
+                                .shops__metro
+                                    .shops__metro-logo(data-color="green" data-coords="55.869937, 37.469915")
+                                        svg
+                                            use(xlink:href="assets/images/moscow-metro.svg#green")
+                                    h4.shops__metro-name Беломорская
+                                .shops__address
+                                    p ул.Смольная, д.63 "Б". ТД&nbsp;"Экстрим" Павильон: № Б-6.
+                                .shops__works
+                                    p Ежедневно, с 10 до 20:30&nbsp;ч
+
+                            .shops__block
+                                .shops__metro
+                                    .shops__metro-logo(data-color="green" data-coords="55.836558, 37.484776")
+                                        svg
+                                            use(xlink:href="assets/images/moscow-metro.svg#green")
+                                    h4.shops__metro-name Водный Стадион
+                                .shops__address
+                                    p Ленинградское шоссе, д.52 Магазин&nbsp;расположен между магазином "Пятёрочка" и "Винлаб".
+                                .shops__works
+                                    p Ежедневно, с 10 до 20 ч
+
+                #map.yandex-map(style="width: 100%")

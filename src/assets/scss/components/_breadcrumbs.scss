@@ -1,0 +1,40 @@
+.breadcrumbs {
+    padding-top: 16px;
+}
+
+.breadcrumbs-wrapper {
+    display: none;
+
+    @include breakpoint(md) {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.breadcrumbs-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #686461;
+
+    @include breakpointMax(xl) {
+        max-width: 360px;
+        @include textLimit(1);
+    }
+}
+
+.breadcrumbs-item span {
+    cursor: default;
+}
+
+.breadcrumbs-separator::after {
+    content: "\f054";
+    margin: 0 6px;
+    display: block;
+    width: 12px;
+    font-family: $icon;
+    font-size: 12px;
+    line-height: 19px;
+    color: #686461;
+    text-align: center;
+}
