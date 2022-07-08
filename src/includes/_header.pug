@@ -4,25 +4,42 @@ block header
 
         .header__inner
 
+            .header__top
+                p Аренда и продажа складской спецтехники
+                address Москва, Ул. Ивана Иванова, 325
+
             .header__logo
                 a(href="/")
                     img(src="assets/images/logo.png", alt="logo")
 
             .header__nav
                 nav.nav
-                    a.nav__item(href="#") Каталог
-                    a.nav__item(href="#") Акции
-                    a.nav__item(href="#") Сравнение
-                    a.nav__item(href="#") О нас
-                    a.nav__item(href="#") Оплата и доставка
-                    a.nav__item(href="#") Контакты
+                    .nav__item(class= page==='category' ? 'active' : false)
+                        a(href="category.html") Каталог
+                    .nav__item(class= page==='sale' ? 'active' : false)
+                        a(href="sale.html") Акции
+                    .nav__item(class= page==='compare' ? 'active' : false)
+                        a(href="compare.html") Сравнение
+                    .nav__item(class= page==='about' ? 'active' : false)
+                        a(href="about.html") О нас
+                    .nav__item(class= page==='delivery' ? 'active' : false)
+                        a(href="delivery.html") Оплата и доставка
+                    .nav__item(class= page==='contatcs' ? 'active' : false)
+                        a(href="contatcs.html") Контакты
 
-            .header__action
-                a.action-button.action-button-compare(href="#" data-stock="0")
-                    i.far.fa-signal-4
+                .header__action
+                    a.action-button.action-button-compare(href="#" data-stock="0")
+                        i.far.fa-signal-4
 
-                a.action-button.action-button-search(href="#")
-                    i.far.fa-search
+                    .header__search
+                        .close-search
+                        form
+                            input(type="search" placeholder="Поиск среди товаров")
+                            button(type="submit")
+                                i.far.fa-search
+
+                    button.action-button.action-button-search(href="#")
+                        i.far.fa-search
 
             .header__phone
                 a(href="tel:88005115508") 8 800 511 55 08

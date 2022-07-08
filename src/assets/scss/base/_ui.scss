@@ -7,7 +7,7 @@ body {
     text-rendering: optimizeLegibility;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    background: #F8F8F8;
+    background: #fff;
 }
 
 body.overflow-hidden {
@@ -45,10 +45,15 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 
 main {
+    background: #F8F8F8;
     min-height: calc(max(calc(100vh - 614px), 650px));
 
     @include breakpoint(md) {
         min-height: calc(max(calc(100vh - 614px), 570px));
+    }
+
+    .main-page & {
+        background: none;
     }
 }
 

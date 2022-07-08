@@ -5,7 +5,7 @@ $(document).ready(function() {
         loop: true,
 
         pagination: {
-          el: '.swiper-pagination',
+          el: '.banner__slider .swiper-pagination',
           type: 'bullets',
         },
 
@@ -15,5 +15,16 @@ $(document).ready(function() {
         }
 
     })
+
+    let bottomSlider = new Swiper(".bottom__swiper", {
+      slidesPerView: 'auto',
+      loop: true,
+
+      pagination: {
+        el: '.bottom__swiper .swiper-pagination',
+        type: 'bullets',
+      },
+
+  })
 
 })

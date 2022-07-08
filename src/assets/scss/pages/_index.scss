@@ -115,7 +115,7 @@
 }
 
 .main-products {
-    padding: 35px 0 650px;
+    padding: 35px 0 680px;
     background: url('../images/main-bg.png');
     background-size: cover;
 }
@@ -318,7 +318,7 @@
 }
 
 .main-products__advise h4 {
-    margin-left: -150px;
+    margin-left: -100px;
     font-weight: 600;
     font-size: 48px;
     line-height: 59px;
@@ -331,4 +331,118 @@
 
 .main-products__advise .button-style {
     max-width: 194px;
+}
+
+.main-bottom {
+    padding: 86px 0 50px;
+    position: relative;
+    color: #fff;
+}
+
+.main-bottom::before {
+    content: '';
+    background: linear-gradient(90deg, #000000 45.44%, rgba(0, 0, 0, 0.8) 65.03%), url('../images/bottom-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+.bottom__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom__slider {
+    width: calc(((100% / 12) * 4) - 15px);
+}
+
+.bottom__swiper {
+    margin-top: 82px;
+}
+
+.bottom__slider h4 {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 100%;
+}
+
+.slide__image {
+    width: 100%;
+    height: 251px;
+    overflow: hidden;
+}
+
+.slide__image img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.bottom__swiper p {
+    margin-top: 28px;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0.5em;
+}
+
+.bottom__slider-pagination {
+    left: unset!important;
+    right: 0!important;
+    bottom: 0!important;
+    width: auto!important;
+}
+
+.bottom__slider-pagination .swiper-pagination-bullet {
+    background: $gray5;
+    width: 8px;
+    height: 4px;
+    opacity: 1;
+    border-radius: 0;
+    transition: width 0.3s ease;
+}
+
+.bottom__slider-pagination .swiper-pagination-bullet-active {
+    width: 31px;
+}
+
+.bottom__text {
+    width: calc((100% / 12) * 4);
+}
+
+.bottom__text p {
+    font-size: 14px;
+    line-height: 180%;
+}
+
+.bottom__text p b {
+    margin-bottom: 70px;
+    display: inline-block;
+    color: $orange;
+}
+
+.bottom__stats {
+    width: calc(((100% / 12) * 2) - 30px);
+}
+
+.stats__item ~ .stats__item {
+    margin-top: 30px;
+}
+
+.stats__item p:first-child {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 110%;
+}
+
+.stats__item p:last-child {
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 180%;
+    color: $orange;
 }
