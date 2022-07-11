@@ -13,3 +13,312 @@ block main
     // Breadcrumbs::End
 
     .category-page
+
+        .container
+
+            .category-wrapper
+
+                // ASIDE
+                .aside
+
+                    ul
+                        li.aside__item.active
+                            a.aside__item-link(href="#") Вилочные погрузчики (125)
+                        li.aside__item
+                            a.aside__item-link(href="#") Ричтраки (24)
+                        li.aside__item
+                            a.aside__item-link(href="#") Перевозчики палет (35)
+                        li.aside__item
+                            a.aside__item-link(href="#") Штабелеры (50)
+                        li.aside__item
+                            a.aside__item-link(href="#") Комплектовщики заказов (352)
+                        li.aside__item
+                            a.aside__item-link(href="#") Складские тягачи (352)
+                        li.aside__item
+                            a.aside__item-link(href="#") Ножничные подъемники (352)
+                        li.aside__item
+                            a.aside__item-link(href="#") Ричстакеры (32)
+                        li.aside__item
+                            a.aside__item-link(href="#") Вездеходы (123)
+                        li.aside__item
+                            a.aside__item-link(href="#") Тракторы (80)
+
+                    .filter
+
+                        .filter__inner
+
+                            .filter__row
+                                .filter__label Тип двигателя
+                                .filter__item
+                                    .filter__checkbox
+                                        .input-style-checkbox
+                                            input#type-1(type="checkbox")
+                                            label(for="type-1") Электрический
+
+                                        .input-style-checkbox
+                                            input#type-2(type="checkbox")
+                                            label(for="type-2") Дизельный
+
+                                        .input-style-checkbox
+                                            input#type-3(type="checkbox")
+                                            label(for="type-3") Бензиновый
+
+                            .filter__row
+                                .filter__label Производитель
+                                .filter__item
+                                    .filter__checkbox
+                                        .input-style-checkbox
+                                            input#prod-1(type="checkbox")
+                                            label(for="prod-1") Heli
+
+                                        .input-style-checkbox
+                                            input#prod-2(type="checkbox")
+                                            label(for="prod-2") HANGCHA
+
+                                        .input-style-checkbox
+                                            input#prod-3(type="checkbox")
+                                            label(for="prod-3") Свойство 1
+
+                                        .input-style-checkbox
+                                            input#prod-4(type="checkbox")
+                                            label(for="prod-4") Свойство 2
+
+                                    span.filter-more Показать еще (7)
+                                        i.fal.fa-chevron-down
+
+                                    span.filter-more Показать меньше
+                                        i.fal.fa-chevron-up
+
+                            .filter__row
+                                .filter__label Наличие
+                                .filter__item
+                                    .filter__checkbox
+                                        .input-style-checkbox
+                                            input#stock-1(type="checkbox" checked)
+                                            label(for="stock-1") В наличии
+
+                            .filter__row
+                                .filter__label Состояние
+                                .filter__item
+                                    .filter__checkbox
+                                        .input-style-checkbox
+                                            input#new-1(type="checkbox")
+                                            label(for="new-1") Новое
+
+                                        .input-style-checkbox
+                                            input#new-2(type="checkbox")
+                                            label(for="new-2") Б/У
+
+                            .filter__row
+                                .filter__label Цена
+                                .filter__item
+                                    .filter__slider
+                                        input.input-min(type="number")
+                                        span —
+                                        input.input-max(type="number")
+
+                                    .filterSlider
+
+                        .filter__bottom
+
+                            button.button-style Показать товары
+                            button.button-style Сбросить фильтр
+
+                // Main
+                .cat
+
+                    .cat__sort
+
+                        .sort__item
+                            p.sort__label Сортировать по:
+                            .sort__select
+                                .sort__value
+                                    p Новинки
+                                .sort__option
+                                    .sort__option-value.selected Новинки
+                                    .sort__option-value Цене
+                                    .sort__option-value Новинки
+                                    .sort__option-value Цене
+
+                        .sort__item
+                            p.sort__label Количество товаров на странице:
+                            .sort__select
+                                .sort__value
+                                    p 12
+                                .sort__option
+                                    .sort__option-value.selected 12
+                                    .sort__option-value 16
+                                    .sort__option-value 20
+
+                    .cat__wrapper
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-1.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPQD10NH
+                                .cat__item-desc
+                                    .cat__item-type Бензиновый погрузчик, 1,0 т
+                                    .cat__item-price 1 700 000 ₽
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPD10-FJ
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HANGCHA CPCD100-XRG77-X
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-1.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPQD10NH
+                                .cat__item-desc
+                                    .cat__item-type Бензиновый погрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPD10-FJ
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HANGCHA CPCD100-XRG77-X
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-1.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPQD10NH
+                                .cat__item-desc
+                                    .cat__item-type Бензиновый погрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPD10-FJ
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HANGCHA CPCD100-XRG77-X
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-1.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPQD10NH
+                                .cat__item-desc
+                                    .cat__item-type Бензиновый погрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPD10-FJ
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HANGCHA CPCD100-XRG77-X
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-1.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPQD10NH
+                                .cat__item-desc
+                                    .cat__item-type Бензиновый погрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HELI CPD10-FJ
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                        .cat__item
+                            .cat__item-img
+                                img(src="assets/images/item-2.png", alt="img")
+
+                            .cat__item-info
+                                .cat__item-name HANGCHA CPCD100-XRG77-X
+                                .cat__item-desc
+                                    .cat__item-type Электропогрузчик, 1,0 т
+
+                    // Pagination
+                    .pagination
+
+                        a.pagination-link.pagination-arrow.pagination-arrow-left.disabled(href="javascript:void(0)")
+                            i.fal.fa-arrow-left
+
+                        a.pagination-link.active(href="javascript:void(0)") 1
+                        a.pagination-link(href="javascript:void(0)") 2
+                        a.pagination-link(href="javascript:void(0)") 3
+                        a.pagination-link(href="javascript:void(0)") 4
+                        a.pagination-link(href="javascript:void(0)") 5
+
+                        a.pagination-link.pagination-arrow.pagination-arrow-right(href="javascript:void(0)")
+                            i.fal.fa-arrow-right
+
+
+        .category-bottom
+
+            .container
+
+                h4 Вилочные погрузчики на выгодных условиях
+
+                .cat-bottom__wrapper
+
+                    .cat-bottom__left
+                        p Leneliga planera bev, Dylanman VAR, sadada i kegagt. Ryna kuddbok prett, tera sorade reaitet bediktig ressade.
+                        p Kabel sanningsbarometer dekagånar datälingar. Sas benade sud respektive sylynt.
+                        p Ysam ogen dyligen, och sebar decingar selogi att ekovalens.
+
+                    .cat-bottom__right
+                        p Leneliga planera bev, Dylanman VAR, sadada i kegagt. Ryna kuddbok prett, tera sorade reaitet bediktig ressade.Kabel sanningsbarometer dekagånar datälingar. Sas benade sud respektive sylynt. Ysam ogen dyligen, och sebar decingar selogi att ekovalens.
+                        p Nanat havis: för kabere vining pneumamatisk ultrapoktiga kaben bokstav nyda.
+                        p Leneliga planera bev, Dylanman VAR, sadada i kegagt. Ryna kuddbok prett, tera sorade reaitet bediktig ressade.Kabel sanningsbarometer dekagånar datälingar. För kabere vining pneumamatisk ultrapoktiga kaben bokstav nyda.
+                        p Leneliga planera bev, Dylanman VAR, sadada i kegagt. Ryna kuddbok prett, tera sorade reaitet bediktig ressade.Kabel sanningsbarometer dekagånar datälingar.

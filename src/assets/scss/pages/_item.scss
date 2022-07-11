@@ -1,0 +1,25 @@
+.item-page {
+    padding: 37px 0 63px;
+}
+
+.item__image {
+    display: flex;
+}
+
+.swiper-item-pagination {
+    background: #fff;
+    position: relative;
+    border: 1px solid #D3D3D3;
+}
+
+.swiper-arrows {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    z-index: 1;
+}
+
+.swiper-item {
+    background: #fff;
+    border: 1px solid #E0E0E0;
+}

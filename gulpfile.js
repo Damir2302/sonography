@@ -223,6 +223,7 @@ function cleancss(cb) {
 function jsPlugins(cb) {
 	return gulp.src([
         pathTo.resolve('node_modules', 'jquery/*/jquery.min.js'),
+        srcPath + 'assets/js/plugins/jquery-ui.min.js',
         pathTo.resolve('node_modules', 'swiper/swiper-bundle.min.js'),
         pathTo.resolve('node_modules', 'inputmask/*/inputmask.min.js')
 	])
@@ -238,7 +239,7 @@ function jsPlugins(cb) {
 };
 
 function js(cb) {
-    return src(path.src.js, {base: srcPath + 'assets/js/'})
+    return src(path.src.js, {base: srcPath + 'assets/js/main'})
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({
@@ -275,7 +276,7 @@ function js(cb) {
 }
 
 function jsWatch(cb) {
-    return src(path.src.js, {base: srcPath + 'assets/js/'})
+    return src(path.src.js, {base: srcPath + 'assets/js/main'})
         .pipe(plumber({
             errorHandler : function(err) {
                 notify.onError({

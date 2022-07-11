@@ -178,7 +178,8 @@ button {
 
 .input-style-checkbox label::before {
     content: '';
-    margin-right: 12px;
+    margin-top: -3px;
+    margin-right: 10px;
     display: inline-block;
     min-width: 14px;
     min-height: 14px;
@@ -186,10 +187,6 @@ button {
     max-height: 14px;
     border: 1px solid #4E4E4E;
     border-radius: 1px;
-
-    @include breakpoint(md) {
-        margin-top: 6px;
-    }
 }
 
 .input-style-checkbox input:checked + label::before {
