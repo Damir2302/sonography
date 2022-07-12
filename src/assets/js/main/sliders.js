@@ -33,8 +33,8 @@ $(document).ready(function() {
     let item_cart_pagination;
 
     item_cart_pagination = new Swiper('.swiper-item-pagination', {
-        slidesPerView: 'auto',
-        spaceBetween: 10,
+        slidesPerView: 4,
+        spaceBetween: 60,
         watchSlidesProgress: true,
         direction: 'horizontal',
 
