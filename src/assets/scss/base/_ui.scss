@@ -82,7 +82,7 @@ main {
         display: block;
         width: 100%;
         height: 100%;
-        z-index: 2;
+        z-index: 5;
         transition: all 0.5s ease;
     }
 }
@@ -176,11 +176,11 @@ button {
     content: '';
     margin-top: -3px;
     margin-right: 10px;
-    display: inline-block;
-    min-width: 14px;
-    min-height: 14px;
-    max-width: 14px;
-    max-height: 14px;
+    display: flex;
+    min-width: 24px;
+    min-height: 24px;
+    max-width: 24px;
+    max-height: 24px;
     border: 1px solid #4E4E4E;
     border-radius: 1px;
 }
@@ -194,4 +194,41 @@ button {
     font-family: $icon;
     font-size: 10px;
     color: #fff;
+}
+
+.input-style {
+    margin-top: 32px;
+    max-width: 278px;
+    background: rgba(255, 255, 255, 0.01);
+    box-shadow: 0px 1px 0px #D3DBE5;
+}
+
+.input-style input {
+    padding: 11px 4px;
+    background: none;
+    width: 100%;
+    font-size: 18px;
+    line-height: 150%;
+    color: #333;
+}
+
+.input-style input::placeholder {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    color: #A9AAAF;
+}
+
+.input-style-checkbox label {
+    font-size: 12px;
+    line-height: 120%;
+}
+
+.input-style-checkbox label {
+    color: #82838C;
+}
+
+.input-style-checkbox label a {
+    display: inline-block;
+    color: #333;
 }

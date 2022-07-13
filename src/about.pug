@@ -1,0 +1,77 @@
+---
+title: Sonography | О компании
+page: sale
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('О компании', 'О компании')
+    // Breadcrumbs::End
+
+    .about-page
+
+        .container
+
+            p Мы занимаемся арендой и продажей складской спецтехники по всей России.
+              br
+              br
+              | <b>Наша цель — обеспечить доступность складской спецтехники для каждого</b>
+              br
+              br
+              |PROM-X — молодая прогрессивная команда, с профессиональным подходом к бизнес-процессам. Вся техника представлена от заводов производетелей напрямую и имеет всю необходимую документацию. Наши реквизиты — скачать
+
+            .features
+
+                .features__item
+                    .features__item-icon
+                        i.fal.fa-badge-check
+                    p.features__item-label Преимущество
+                    p.features__item-text Краткое описание
+
+                .features__item
+                    .features__item-icon
+                        i.fal.fa-balance-scale
+                    p.features__item-label Преимущество
+                    p.features__item-text Краткое описание
+
+                .features__item
+                    .features__item-icon
+                        i.fal.fa-chart-network
+                    p.features__item-label Преимущество
+                    p.features__item-text Краткое описание
+
+                .features__item
+                    .features__item-icon
+                        i.fal.fa-globe
+                    p.features__item-label Преимущество
+                    p.features__item-text Краткое описание
+
+            .features__image
+                img(src="assets/images/Rectangle-1.jpg", alt="img")
+
+            .form
+
+                h2 Форма обратной связи
+
+                form
+
+                    .form__left
+                        .input-style
+                            input(type="text" placeholder="Введите ваше имя" required)
+                        .input-style
+                            input(type="tel" placeholder="Телефон" required)
+                        .input-style
+                            input(type="email" placeholder="E-mail" required)
+                        .input-style-checkbox
+                            input#agreement(type="checkbox" checked required)
+                            label(for="agreement")
+                                span Даю согласие на обработку <a href="#">персональных данных</a>
+
+                    .form__right
+                        .input-textarea
+                            textarea
+                        button.button-style.button-style--gray(type="submit") Отправить сообщение

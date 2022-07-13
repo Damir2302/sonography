@@ -131,8 +131,8 @@ block main
                             a.passport-btn.button-style.button-style--transparent-gray(href="#") Технический паспорт
 
                         .item-buttons-2
-                            a.button-style.button-style--gray(href="#") Запросить коммерческое предложение
-                            a.button-style.button-style--orange(href="#") Запросить КП на ремонт
+                            button.button-style.button-style--gray(href="#") Запросить коммерческое предложение
+                            button.button-style.button-style--orange(href="#") Запросить КП на ремонт
 
             .item-container
 
@@ -142,7 +142,7 @@ block main
                     .item__tab-item(data-active="2") Характеристики
                     .item__tab-item(data-active="3") Обсулживание и ремонт
 
-                .item__tab-container(data-show="1")
+                .item__tab-container.active(data-show="1")
                     p В стандартную комплектацию уже входит все необходимое
                       br
                       br
@@ -225,3 +225,32 @@ block main
                     p Наша компания также осуществляет ремонт и сервисное обслуживание оборудования Choongwae CHS-E1000.
                       br
                       |- Для заказа свяжитесь с нашими специалистами по номеру 8-800-511-55-08 или оставьте заявку на info@sonography.ru
+
+    .popup
+
+        .popup-form.show
+            .popup-close
+            p.popup-title Запрос коммерческого предложения
+            form
+                .input-style
+                    input(type="text" placeholder="Имя" required)
+                .input-style
+                    input(type="email" placeholder="E-mail" required)
+                .input-style
+                    input(type="tel" placeholder="Телефон" required)
+                .input-style
+                    input(type="text" placeholder="Комментарий" required)
+
+                button.button-style.button-style--gray(type="submit") Запросить
+                .popup-agreement
+                    .input-style-checkbox
+                        input#agreement(type="checkbox" checked required)
+                        label(for="agreement")
+                            span Даю согласие на обработку <a href="#">персональных данных</a>
+
+        .popup-success
+            .popup-close
+            p.success-title Спасибо
+            p.success-text Мы скоро свяжемся с вами
+
+            button.button-style.button-style--gray Вернуться на сайт

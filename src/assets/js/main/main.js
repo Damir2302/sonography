@@ -37,6 +37,25 @@ $(document).ready(function() {
     // Устанавливаем начальное значение ползунка MAX
     $(".input-max").val($(".filterSlider").slider("values", 1))
 
+    // Popup для КП
+    $('.item-buttons-2 button').on('click', function() {
+        $('body').addClass('overflow-hidden')
+        $('#page').addClass('bg-overlay')
+        $('.popup').addClass('active')
+    })
 
+    $('.popup-close, .popup-success button').on('click', function() {
+        $('body').removeClass('overflow-hidden')
+        $('#page').removeClass('bg-overlay')
+        $('.popup').removeClass('active')
+    })
 
+    // Табы в карточке товара
+    $('.item__tab-item').on('click', function() {
+        $('.item__tab-item').removeClass('active')
+        $(this).addClass('active')
+
+        $('.item__tab-container').removeClass('active')
+        $(`.item__tab-container[data-show=${$(this).attr('data-active')}]`).addClass('active')
+    })
 });
