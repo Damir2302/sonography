@@ -199,8 +199,7 @@ button {
 .input-style {
     margin-top: 32px;
     max-width: 278px;
-    background: rgba(255, 255, 255, 0.01);
-    box-shadow: 0px 1px 0px #D3DBE5;
+    border-bottom: 1px solid #D3DBE5;
 }
 
 .input-style input {
@@ -231,4 +230,12 @@ button {
 .input-style-checkbox label a {
     display: inline-block;
     color: #333;
+}
+
+.input-textarea {
+    border: 1.5px solid #e6e6e6;
+}
+
+.input-textarea textarea {
+    padding: 11px 15px;
 }

@@ -1,0 +1,22 @@
+---
+title: Sonography | Контакты
+page: contacts
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Контакты', 'Контакты')
+    // Breadcrumbs::End
+
+    .contacts-page
+
+        .container
+
+            .contacts__block
+                // Yandex Map
+                script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript")
+                #map(style="width: 100%; height: 311px")
