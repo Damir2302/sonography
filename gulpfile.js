@@ -224,6 +224,7 @@ function jsPlugins(cb) {
 	return gulp.src([
         pathTo.resolve('node_modules', 'jquery/*/jquery.min.js'),
         srcPath + 'assets/js/plugins/jquery-ui.min.js',
+        srcPath + 'assets/js/plugins/jquery.fancybox.min.js',
         pathTo.resolve('node_modules', 'swiper/swiper-bundle.min.js'),
         pathTo.resolve('node_modules', 'inputmask/*/inputmask.min.js')
 	])

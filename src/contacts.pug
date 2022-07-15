@@ -16,7 +16,58 @@ block main
 
         .container
 
-            .contacts__block
+            .contacts
+
+                .contacts__item
+                    .contacts__item-icon
+                        i.fal.fa-phone
+                    p.contacts__item-label Контактный телефон
+                    a.contacts__item-text(href="tel:88005115508") 8 800 511 55 08
+                    a.contacts__item-text(href="tel:84997050010") 8 499 705 00 10
+
+                .contacts__item
+                    .contacts__item-icon
+                        i.fal.fa-envelope
+                    p.contacts__item-label Электронная почта
+                    a.contacts__item-text(href="mailto:info@sonography.ru") info@sonography.ru
+
+                .contacts__item
+                    .contacts__item-icon
+                        i.fal.fa-map-marker-alt
+                    p.contacts__item-label Балашиха,
+                    p.contacts__item-text ул. Ивана Иванова, д 14
+
+                .contacts__item
+                    .contacts__item-icon
+                        i.fal.fa-calendar-alt
+                    p.contacts__item-label Режим работы:
+                    p.contacts__item-text Пн-Пт: с 8:00 до 21:00
+                    p.contacts__item-text Сб-Вс: с 9:00 до 20:00
+
+            .section-map
                 // Yandex Map
                 script(src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript")
-                #map(style="width: 100%; height: 311px")
+                #map(style="width: 100%;")
+
+            .form
+
+                h2 Форма обратной связи
+
+                form
+
+                    .form__left
+                        .input-style
+                            input(type="text" placeholder="Введите ваше имя" required)
+                        .input-style
+                            input(type="tel" placeholder="Телефон" required)
+                        .input-style
+                            input(type="email" placeholder="E-mail" required)
+                        .input-style-checkbox
+                            input#agreement(type="checkbox" checked required)
+                            label(for="agreement")
+                                span Даю согласие на обработку <a href="#">персональных данных</a>
+
+                    .form__right
+                        .input-textarea
+                            textarea
+                        button.button-style.button-style--gray(type="submit") Отправить сообщение

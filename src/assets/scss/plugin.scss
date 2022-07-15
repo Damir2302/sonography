@@ -1,3 +1,13 @@
 @import 'plugins/fontawesome';
 @import 'plugins/animate.min';
 @import 'plugins/jquery-ui.min';
+
+@function max($numbers...) {
+    @return m#{a}x(#{$numbers});
+  }
+
+@function min($numbers...) {
+    @return m#{i}n(#{$numbers});
+}
+
+@import 'plugins/jquery.fancybox.min';

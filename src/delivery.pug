@@ -1,0 +1,65 @@
+---
+title: Sonography | Доставка и оплата
+page: delivery
+---
+
+extends includes/_page
+
+block main
+
+    // Breadcrumbs::Start
+    include components/_breadcrumbs
+    +breadcrumbs('Доставка и оплата', 'Доставка и оплата')
+    // Breadcrumbs::End
+
+    .delivery-page
+
+        .container
+
+            p Компания Пром-Икс осуществляет бесплатную доставку складского и мобильного оборудования по всей России. Мы сотрудничаем с такими транспортными компаниями, как Деловые Линнии, ПЭК, Major Express, СДЭК, Грузовичков, Газелькин, Yandex и частными грузоперевозчиками.
+             br
+             br
+             |Сроки доставки зависят от  местоположения заказчика и нормативов транспортной компании. После отгрузки наш менеджер сообщит Вам трек-номер, по которому можно будет отслеживать перемещение техники до адреса назначения или  контактный номер водителя.
+
+            h3 Оплата товара
+
+            p Наша компания работает с юридическими и физическими лицами только по безналичному расчету. Порядок и сроки оплаты устанавливаются индивидуально.
+              br
+              br
+              |Чтобы узнать стоимость интересующего Вас товара, можно кликнуть "Запросить коммерческое предложение", либо отправить запрос на электронную почту <a href="mailto:info@prom-x.ru">info@prom-x.ru</a>
+              |Также можно связаться по телефону <a href="tel:88005337953">8 (800) 533-79-53</a>
+
+            .reviews
+                h3 Видео отзывы
+
+                .reviews__container
+
+                    a.reviews__block(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=TcMBFSGVi1c")
+                        img(src="assets/images/del-1.jpg" width="200" height="150")
+
+                    a.reviews__block(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=TcMBFSGVi1c")
+                        img(src="assets/images/del-2.jpg" width="200" height="150")
+
+                    a.reviews__block(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=TcMBFSGVi1c")
+                        img(src="assets/images/del-3.jpg" width="200" height="150")
+
+            .gallery
+                h3 Галерея
+
+                .gallery__container
+
+                    a(href="#")
+                        img(src="assets/images/rec-1.jpg", alt="")
+                        p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
+
+                    a(href="#")
+                        img(src="assets/images/rec-2.jpg", alt="")
+                        p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
+
+                    a(href="#")
+                        img(src="assets/images/rec-3.jpg", alt="")
+                        p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
+
+                    a(href="#")
+                        img(src="assets/images/rec-4.jpg", alt="")
+                        p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
