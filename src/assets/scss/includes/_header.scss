@@ -4,6 +4,14 @@
 
     .main-page & {
         padding: 48px 0 0;
+
+        @include breakpointMax(lg) {
+            padding: 0;
+        }
+    }
+
+    @include breakpointMax(lg) {
+        padding: 0;
     }
 }
 
@@ -25,6 +33,10 @@
         left: 50px;
         width: calc(100% - 100px);
         z-index: 2;
+
+        @include breakpointMax(lg) {
+            position: static;
+        }
     }
 }
 
@@ -36,6 +48,16 @@
     justify-content: space-between;
     width: calc(100% - 96px);
     color: $gray2;
+
+    .main-page & {
+        top: -54px;
+        left: 0;
+        width: 100%;
+    }
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
 }
 
 .header__logo img {

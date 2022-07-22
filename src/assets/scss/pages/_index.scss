@@ -4,6 +4,10 @@
     position: relative;
     height: calc(max(100vh, 760px));
     max-height: 824px;
+
+    @include breakpointMax(lg) {
+        padding: 0;
+    }
 }
 
 .banner__slider {
@@ -94,6 +98,10 @@
     justify-content: space-between;
     width: calc(100% - 94px);
     z-index: 1;
+
+    @include breakpointMax(lg) {
+        display: none;
+    }
 }
 
 .banner-arrow {

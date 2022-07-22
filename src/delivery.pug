@@ -26,8 +26,8 @@ block main
             p Наша компания работает с юридическими и физическими лицами только по безналичному расчету. Порядок и сроки оплаты устанавливаются индивидуально.
               br
               br
-              |Чтобы узнать стоимость интересующего Вас товара, можно кликнуть "Запросить коммерческое предложение", либо отправить запрос на электронную почту <a href="mailto:info@prom-x.ru">info@prom-x.ru</a>
-              |Также можно связаться по телефону <a href="tel:88005337953">8 (800) 533-79-53</a>
+              |Чтобы узнать стоимость интересующего Вас товара, можно кликнуть "Запросить коммерческое предложение", либо отправить запрос на электронную почту <a href="mailto:info@prom-x.ru"><b>info@prom-x.ru</b></a>
+              |Также можно связаться по телефону <a href="tel:88005337953"><b>8 (800) 533-79-53</b></a>
 
             .reviews
                 h3 Видео отзывы
@@ -35,31 +35,41 @@ block main
                 .reviews__container
 
                     a.reviews__block(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=TcMBFSGVi1c")
-                        img(src="assets/images/del-1.jpg" width="200" height="150")
+                        .reviews__block-img
+                            img(src="assets/images/del-1.jpg" width="200" height="150")
+                        .reviews__block-title Название отзыва
 
                     a.reviews__block(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=TcMBFSGVi1c")
-                        img(src="assets/images/del-2.jpg" width="200" height="150")
+                        .reviews__block-img
+                            img(src="assets/images/del-2.jpg" width="200" height="150")
+                        .reviews__block-title Название отзыва
 
                     a.reviews__block(data-fancybox="video-gallery" href="https://www.youtube.com/watch?v=TcMBFSGVi1c")
-                        img(src="assets/images/del-3.jpg" width="200" height="150")
+                        .reviews__block-img
+                            img(src="assets/images/del-3.jpg" width="200" height="150")
+                        .reviews__block-title Название отзыва
 
             .gallery
                 h3 Галерея
 
                 .gallery__container
 
-                    a(href="#")
-                        img(src="assets/images/rec-1.jpg", alt="")
+                    a.gallery__block(data-fancybox="image-gallery" href="assets/images/rec-1.jpg")
+                        .gallery__block-img
+                            img(src="assets/images/rec-1.jpg", alt="")
                         p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
 
-                    a(href="#")
-                        img(src="assets/images/rec-2.jpg", alt="")
+                    a.gallery__block(data-fancybox="image-gallery" href="assets/images/rec-2.jpg")
+                        .gallery__block-img
+                            img(src="assets/images/rec-2.jpg", alt="")
                         p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
 
-                    a(href="#")
-                        img(src="assets/images/rec-3.jpg", alt="")
+                    a.gallery__block(data-fancybox="image-gallery" href="assets/images/rec-3.jpg")
+                        .gallery__block-img
+                            img(src="assets/images/rec-3.jpg", alt="")
                         p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
 
-                    a(href="#")
-                        img(src="assets/images/rec-4.jpg", alt="")
+                    a.gallery__block(data-fancybox="image-gallery" href="assets/images/rec-4.jpg")
+                        .gallery__block-img
+                            img(src="assets/images/rec-4.jpg", alt="")
                         p Kagt talepunkt vivinade dott bejått. Kåskapet nisesam, liksom lågaffektivt
